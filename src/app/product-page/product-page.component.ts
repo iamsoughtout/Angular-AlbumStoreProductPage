@@ -9,12 +9,11 @@ import { ProductService } from '../product.service';
   styleUrls: ['./product-page.component.css']
 })
 export class ProductPageComponent implements OnInit {
-  albumInfo: Album;
 
-  constructor(private _productService: ProductService) { }
+  constructor() { }
 
   ngOnInit() {
-    this._productService.getAlbum(1).subscribe(response => this.albumInfo = response)
+
   }
 
 }
